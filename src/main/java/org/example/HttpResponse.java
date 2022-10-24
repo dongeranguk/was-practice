@@ -32,7 +32,7 @@ public class HttpResponse {
             dos.write(body, 0, body.length);
             dos.flush();
         } catch(IOException e) {
-            e.getMessage();
+            logger.error(e.getMessage());
         }
     }
 }
